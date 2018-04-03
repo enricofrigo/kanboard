@@ -19,7 +19,7 @@ class BoardCommentTooltipController extends BaseController
         $task = $this->getTask();
         $commentSortingDirection = $this->userMetadataCacheDecorator->get(UserMetadataModel::KEY_COMMENT_SORTING_DIRECTION, 'ASC');
 
-        $this->response->html($this->template->render('board/tooltip_comments', array(
+        $this->response->html($this->template->render('CommentTooltip:board/tooltip_comments', array(
             'task' => $task,
             'comments' => $this->commentModel->getAll($task['id'], $commentSortingDirection)
         )));
