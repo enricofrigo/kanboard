@@ -12,4 +12,5 @@ Installation
 - Create a directory **CommentTooltip** under the folder **plugins**
 - Copy all source files in this new directory
 - Go on your local installation of Kanboard
+- Check in Settings->Integration if enable comments tooltip is selected
 - After the login, you should see the older comment label at the endo fo tasks board
