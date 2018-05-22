@@ -33,7 +33,12 @@ class Plugin extends Base
     {
         return '1.0.1';
     }
-
+    
+    public function getPluginHomepage()
+    {
+	    return 'https://github.com/enricofrigo/kanboard/tree/master/plugin-comment-tooltip/CommentTooltip';
+    }
+    
     public function isCommentTooltipEnabeld()
     {
         if (defined('COMMENT_TOOLTIP_ENABLED')) {
